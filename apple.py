@@ -191,8 +191,8 @@ y_test = y_test*scale_factor
 #final graph
 st.subheader('Closing Predictions vs Closing Original' )
 fig2 = plt.figure(figsize=(12,6))
-plt.plot(y_test, 'b', label = 'ORiginal CLosing price')
-plt.plot(y_predicted, 'r', label = 'predicted CLosing price')
+plt.plot(y_test, 'b', label = 'Original CLosing price')
+plt.plot(y_predicted, 'r', label = 'Predicted CLosing price')
 plt.xlabel('time')
 plt.ylabel('price')
 plt.legend()
@@ -218,10 +218,10 @@ scale_factor = 1/scaler.scale_[0]
 y_predicted_open =  y_predicted_open*scale_factor
 y_test_open = y_test_open*scale_factor
 #final graph
-st.subheader('Opening Predictions vs Closing Original' )
+st.subheader('Opening Predictions vs Opening Original' )
 fig2 = plt.figure(figsize=(12,6))
-plt.plot(y_test_open, 'm', label = 'ORiginal Opening price')
-plt.plot(y_predicted_open, 'y', label = 'predicted Opening price')
+plt.plot(y_test_open, 'm', label = 'Original Opening price')
+plt.plot(y_predicted_open, 'y', label = 'Predicted Opening price')
 plt.xlabel('time')
 plt.ylabel('price')
 plt.legend()
@@ -242,10 +242,10 @@ scale_factor = 1/scaler.scale_[0]
 y_predicted_high =  y_predicted_high*scale_factor
 y_test_high = y_test_high*scale_factor
 #final graph
-st.subheader('highest Predictions  vs highest Original ' )
+st.subheader('Highest Predictions  vs Highest Original ' )
 fig2 = plt.figure(figsize=(12,6))
-plt.plot(y_test_high, 'g', label = 'Highest ORiginal  price')
-plt.plot(y_predicted_high, 'k', label = 'Highest predicted  price')
+plt.plot(y_test_high, 'g', label = 'Highest Original  price')
+plt.plot(y_predicted_high, 'k', label = 'Highest Predicted  price')
 plt.xlabel('time')
 plt.ylabel('price')
 plt.legend()
